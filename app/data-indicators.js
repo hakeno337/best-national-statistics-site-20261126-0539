@@ -1,0 +1,96 @@
+// Headline indicators shown on the Overview page.
+// Every figure is a published BPS or World Bank figure; see sources.js for the
+// exact publication each number comes from.
+
+export const HEADLINE = [
+  {
+    label: 'Penduduk',
+    value: '281,6',
+    unit: 'juta jiwa',
+    note: 'Pertengahan 2024 · tumbuh 0,79% per tahun',
+    delta: '+2,2 jt dari 2023',
+    deltaClass: 'delta-up',
+    link: '#/penduduk',
+    linkText: 'Lihat struktur penduduk →',
+  },
+  {
+    label: 'Pertumbuhan ekonomi',
+    value: '5,03',
+    unit: '% (PDB)',
+    note: 'Tahun 2024, harga konstan 2010',
+    delta: 'PDB Rp22.139 triliun',
+    deltaClass: 'delta-up',
+    link: '#/ekonomi',
+    linkText: 'Lihat ekonomi →',
+  },
+  {
+    label: 'Tingkat kemiskinan',
+    value: '9,03',
+    unit: '% penduduk',
+    note: 'Maret 2024 · terendah dalam satu dekade',
+    delta: 'Turun 0,33 poin dari Mar 2023',
+    deltaClass: 'delta-down',
+    link: '#/sosial',
+    linkText: 'Lihat sosial →',
+  },
+  {
+    label: 'Indeks Pembangunan Manusia',
+    value: '75,02',
+    unit: 'IPM 2024',
+    note: 'Kategori “tinggi” · naik 0,63 poin',
+    delta: 'Harapan hidup 73,93 tahun',
+    deltaClass: 'delta-up',
+    link: '#/sosial',
+    linkText: 'Lihat sosial →',
+  },
+  {
+    label: 'Inflasi tahunan',
+    value: '1,57',
+    unit: '% (IHK)',
+    note: 'Desember 2024 terhadap Desember 2023',
+    delta: 'Turun dari 2,61% pada 2023',
+    deltaClass: 'delta-down',
+    link: '#/ekonomi',
+    linkText: 'Lihat ekonomi →',
+  },
+  {
+    label: 'Pengangguran terbuka',
+    value: '4,91',
+    unit: '% angkatan kerja',
+    note: 'Agustus 2024',
+    delta: 'Turun dari 5,45% pada Agu 2023',
+    deltaClass: 'delta-down',
+    link: '#/sosial',
+    linkText: 'Lihat sosial →',
+  },
+  {
+    label: 'Ekspor barang',
+    value: '264,7',
+    unit: 'miliar dolar AS',
+    note: 'Tahun 2024 · surplus dagang 31,0 miliar dolar AS',
+    delta: 'Impor 233,7 miliar dolar AS',
+    deltaClass: 'delta-up',
+    link: '#/ekonomi',
+    linkText: 'Lihat ekonomi →',
+  },
+  {
+    label: 'Provinsi',
+    value: '38',
+    unit: 'provinsi',
+    note: 'Papua Pegunungan & Papua Barat Daya termuda (2022)',
+    delta: 'Jawa Barat terpadat: 49,9 jt jiwa',
+    deltaClass: 'delta-up',
+    link: '#/provinsi',
+    linkText: 'Jelajahi provinsi →',
+  },
+];
+
+// Short "sekilas" facts for the Overview page, each with its own source line.
+export const AT_A_GLANCE = [
+  { fact: 'Luas daratan', value: '1,905 juta km²', src: 'BPS, Statistik Indonesia 2024' },
+  { fact: 'Kepadatan penduduk', value: '±148 jiwa/km²', src: 'BPS 2024 (281,6 jt jiwa ÷ 1,905 jt km²)' },
+  { fact: 'PDB per kapita', value: '±US$4.960', src: 'BPS 2024 (PDB Rp22.139 triliun)' },
+  { fact: 'Rasio gini', value: '0,379', src: 'BPS, Maret 2024' },
+  { fact: 'Penduduk usia kerja (15–64 thn)', value: '±68% dari penduduk', src: 'BPS, Sensus & proyeksi 2024' },
+  { fact: 'Pulau bernama', value: '17.380 pulau', src: 'BPS / Kementerian Kelautan dan Perikanan' },
+];
